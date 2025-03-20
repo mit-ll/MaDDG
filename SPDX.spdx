@@ -1,0 +1,6 @@
+SPDXVersion: SPDX-2.1
+PackageName: MaDDG
+PackageHomePage: https://github.com/mit-ll/maddg 
+PackageOriginator: MIT Lincoln Laboratory
+PackageCopyrightText: 2024 Massachusetts Institute of Technology
+PackageLicenseDeclared: MIT

@@ -1,0 +1,76 @@
+# Copyright (c) 2024 Massachusetts Institute of Technology
+# SPDX-License-Identifier: MIT
+
+twilight_sun_el: &twilight_sun_el [-90, -18.0]
+
+sensor_list:
+  Alpha:
+    id: Alpha
+    lat: 0.0
+    lon: 0.0
+    alt: 0.0
+    dra: 1.0
+    ddec: 1.0
+    obs_per_collect: 3
+    obs_time_spacing: 1
+    collect_gap_mean: 60.0
+    collect_gap_std: 5
+    obs_limits:
+      el: [15.0, 90]
+      sun_el: *twilight_sun_el
+  Bravo:
+    id: Bravo
+    lat: 0.0
+    lon: 15.0
+    alt: 0.0
+    dra: 1.0
+    ddec: 1.0
+    obs_per_collect: 5
+    obs_time_spacing: 1
+    collect_gap_mean: 10.0
+    collect_gap_std: 0
+    obs_limits:
+      el: [15.0, 90]
+      sun_el: *twilight_sun_el
+  Charlie:
+    id: Charlie
+    lat: 0.0
+    lon: 30.0
+    alt: 0.0
+    dra: 10.0
+    ddec: 10.0
+    obs_per_collect: 1
+    obs_time_spacing: 0
+    collect_gap_mean: 600.0
+    collect_gap_std: 0
+    obs_limits:
+      el: [15.0, 90]
+      sun_el: *twilight_sun_el
+  Delta:
+    id: Delta
+    lat: 0.0
+    lon: 45.0
+    alt: 0.0
+    dra: 1.0
+    ddec: 1.0
+    obs_per_collect: 3
+    obs_time_spacing: 1
+    collect_gap_mean: 120.0
+    collect_gap_std: 5
+    obs_limits:
+      el: [15.0, 90]
+      sun_el: *twilight_sun_el
+  Echo:
+    id: Echo
+    lat: 0.0
+    lon: 60.0
+    alt: 0.0
+    dra: 1.0
+    ddec: 1.0
+    obs_per_collect: 3
+    obs_time_spacing: 1
+    collect_gap_mean: 120.0
+    collect_gap_std: 5
+    obs_limits:
+      el: [15.0, 90]
+      sun_el: *twilight_sun_el

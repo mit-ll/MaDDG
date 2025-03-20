@@ -1,0 +1,7 @@
+[
+    "hydra/launcher=submitit_slurm",
+    "hydra.launcher.partition=PARTITION",
+    "hydra.launcher.constraint=CONSTRAINT",
+    "hydra.launcher.nodes=1",
+    "hydra.launcher.cpus_per_task=2"
+]

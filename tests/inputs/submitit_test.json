@@ -1,0 +1,4 @@
+[
+    "hydra.job.chdir=True",
+    "hydra/launcher=submitit_local"
+]

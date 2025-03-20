@@ -1,0 +1,21 @@
+# Copyright (c) 2024 Massachusetts Institute of Technology
+# SPDX-License-Identifier: MIT
+
+# This is a sensor that should not be able to see anything.
+# Its purpose is to test code branches that handle a complete lack of observations.
+
+sensor_list:
+  magoo:
+    id: magoo
+    lat: 90.0
+    lon: 0.0
+    alt: 0.0
+    dra: 1.0
+    ddec: 1.0
+    obs_per_collect: 1
+    obs_time_spacing: 0
+    collect_gap_mean: 86400
+    collect_gap_std: 0
+    obs_limits:
+      el: [90, 90]
+      sun_el: [90, 90]

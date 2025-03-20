@@ -1,0 +1,44 @@
+# Copyright (c) 2024 Massachusetts Institute of Technology
+# SPDX-License-Identifier: MIT
+
+twilight_sun_el: &twilight_sun_el [-90, -18.0]
+
+basic_weather: &basic_weather
+  cloud_prob: 0.5
+  cloud_duration_mean: 10800.0   # seconds
+  cloud_duration_std: 7200.0   # seconds
+
+sensor_list:
+  A1:
+    id: A1
+    lat: 0.0
+    lon: 0.0
+    alt: 0.0
+    dra: 1.0
+    ddec: 1.0
+    obs_per_collect: 1
+    obs_time_spacing: 0
+    collect_gap_mean: 6330.0
+    collect_gap_std: 0
+    obs_limits:
+      el: [15.0, 90]
+      sun_el: *twilight_sun_el
+      invalid_limit: 1
+    weather: *basic_weather
+  A2:
+    id: A2
+    lat: 0.0
+    lon: 0.0
+    alt: 0.0
+    dra: 1.0
+    ddec: 1.0
+    obs_per_collect: 1
+    obs_time_spacing: 0
+    collect_gap_mean: 6300.0
+    collect_gap_std: 0
+    obs_limits:
+      el: [15.0, 90]
+      sun_el: *twilight_sun_el
+      invalid_limit: 2
+    weather: *basic_weather
+  

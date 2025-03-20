@@ -1,0 +1,183 @@
+twilight_sun_el: &twilight_sun_el -18.0
+
+basic_weather: &basic_weather
+  cloud_prob: 0.5
+  cloud_duration_mean: 10800.0   # seconds
+  cloud_duration_std: 7200.0   # seconds
+
+sensor_list:
+  A1:
+    id: A1
+    lat: 0.0
+    lon: 0.0
+    alt: 0.0
+    dra: 1.0
+    ddec: 1.0
+    students_dof: 1
+    obs_per_collect: 1
+    obs_time_spacing: 0
+    collect_gap_mean: 6330.0
+    collect_gap_std: 0
+    obs_limits:
+      el: [15.0, 90]
+      sun_el: [*twilight_sun_el, 90]
+    weather: *basic_weather
+  A2:
+    id: A2
+    lat: 0.0
+    lon: 0.0
+    alt: 0.0
+    dra: 1.0
+    ddec: 1.0
+    obs_per_collect: 1
+    obs_time_spacing: 0
+    collect_gap_mean: 6300.0
+    collect_gap_std: 0
+    obs_limits:
+      el: [15.0, 90]
+      sun_el: [*twilight_sun_el, 90]
+    weather: *basic_weather
+  B1:
+    id: B1
+    lat: -7.41
+    lon: 72.45
+    alt: -62.0
+    dra: 1.0
+    ddec: 1.0
+    students_dof: 1
+    obs_per_collect: 1
+    obs_time_spacing: 0
+    collect_gap_mean: 6340.0
+    collect_gap_std: 0
+    obs_limits:
+      el: [15.0, 90]
+      sun_el: [*twilight_sun_el, 90]
+    weather: *basic_weather
+  B2:
+    id: B2
+    lat: -7.41
+    lon: 72.45
+    alt: -62.0
+    dra: 10.0
+    ddec: 10.0
+    students_dof: 1
+    obs_per_collect: 1
+    obs_time_spacing: 0
+    collect_gap_mean: 6315.0
+    collect_gap_std: 0
+    obs_limits:
+      el: [15.0, 90]
+      sun_el: [*twilight_sun_el, 90]
+    weather: *basic_weather
+  B3:
+    id: B3
+    lat: -7.41
+    lon: 72.45
+    alt: -62.0
+    dra: 1.0
+    ddec: 1.0
+    students_dof: 10
+    obs_per_collect: 1
+    obs_time_spacing: 0
+    collect_gap_mean: 6350.0
+    collect_gap_std: 0
+    obs_limits:
+      el: [15.0, 90]
+      sun_el: [*twilight_sun_el, 90]
+    weather: *basic_weather
+  C1:
+    id: C1
+    lat: 33.82
+    lon: 276.79
+    alt: 1512.0
+    dra: 1.0
+    ddec: 1.0
+    students_dof: 30.0
+    obs_per_collect: 1
+    obs_time_spacing: 0
+    collect_gap_mean: 6350.0
+    collect_gap_std: 0
+    obs_limits:
+      el: [15.0, 90]
+      sun_el: [*twilight_sun_el, 90]
+    weather: *basic_weather
+  C2:
+    id: C2
+    lat: 33.82
+    lon: 278.50
+    alt: 1512.0
+    dra: 10.0
+    ddec: 10.0
+    students_dof: 1
+    obs_per_collect: 1
+    obs_time_spacing: 0
+    collect_gap_mean: 6340.0
+    collect_gap_std: 0
+    obs_limits:
+      el: [15.0, 90]
+      sun_el: [*twilight_sun_el, 90]
+    weather: *basic_weather
+  C3:
+    id: C3
+    lat: 33.82
+    lon: 278.29
+    alt: 1512.0
+    dra: 1.0
+    ddec: 1.0
+    students_dof: 1
+    obs_per_collect: 1
+    obs_time_spacing: 0
+    collect_gap_mean: 6340.0
+    collect_gap_std: 0
+    obs_limits:
+      el: [15.0, 90]
+      sun_el: [*twilight_sun_el, 90]
+    weather: *basic_weather
+  D1:
+    id: D1
+    lat: 20.71
+    lon: 203.74
+    alt: 3060.0
+    dra: 1.0
+    ddec: 1.0
+    students_dof: 1
+    obs_per_collect: 1
+    obs_time_spacing: 0
+    collect_gap_mean: 6330.0
+    collect_gap_std: 0
+    obs_limits:
+      el: [15.0, 90]
+      sun_el: [*twilight_sun_el, 90]
+    weather: *basic_weather
+  D2:
+    id: D2
+    lat: 20.71
+    lon: 203.74
+    alt: 3060.0
+    dra: 10.0
+    ddec: 10.0
+    students_dof: 1
+    obs_per_collect: 1
+    obs_time_spacing: 0
+    collect_gap_mean: 6350.0
+    collect_gap_std: 0
+    obs_limits:
+      el: [15.0, 90]
+      sun_el: [*twilight_sun_el, 90]
+    weather: *basic_weather
+  D3:
+    id: D3
+    lat: 20.71
+    lon: 203.74
+    alt: 3060.0
+    dra: 1.0
+    ddec: 1.0
+    students_dof: 1
+    obs_per_collect: 1
+    obs_time_spacing: 0
+    collect_gap_mean: 6350.0
+    collect_gap_std: 0
+    obs_limits:
+      el: [15.0, 90]
+      sun_el: [*twilight_sun_el, 90]
+    weather: *basic_weather

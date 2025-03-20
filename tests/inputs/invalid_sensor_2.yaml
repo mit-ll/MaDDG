@@ -1,0 +1,19 @@
+# Copyright (c) 2024 Massachusetts Institute of Technology
+# SPDX-License-Identifier: MIT
+
+# This sensor is for test purposes only. DO NOT MODIFY.
+
+sensor_list:
+  sensor:
+    id: sensor
+    lat: 90.0
+    alt: 0.0
+    dra: 1.0
+    ddec: 1.0
+    obs_per_collect: 1
+    obs_time_spacing: 0
+    collect_gap_mean: 86400
+    collect_gap_std: 0
+    obs_limits:
+      el: [90, 90]
+      sun_el: [90, 90]
