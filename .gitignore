@@ -127,6 +127,16 @@ instance/
 # Sphinx documentation
 docs/_build/
 
+# Build and docs folder/files
+build/*
+dist/*
+sdist/*
+docs/api/*
+docs/_rst/*
+docs/_build/*
+cover/*
+MANIFEST
+
 # PyBuilder
 .pybuilder/
 target/
