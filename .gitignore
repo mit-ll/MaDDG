@@ -127,6 +127,17 @@ instance/
 # Sphinx documentation
 docs/_build/
 
+# Build and docs folder/files
+build/*
+dist/*
+sdist/*
+docs/api/*
+docs/_rst/*
+docs/_build/*
+docs/generated/*
+cover/*
+MANIFEST
+
 # PyBuilder
 .pybuilder/
 target/
@@ -282,9 +293,6 @@ tmp/
 scratch/
 outputs/
 examples/example_outputs/
-
-# Documentation Files
-.readthedocs.yml
 
 # pytest and pytest-cov
 .coverage
