@@ -9,7 +9,7 @@ from numpy.typing import NDArray
 
 class ImpulsiveManeuver:
     """
-    ImpulseManeuver class holds an Impulse Maneuver definition, which includes the time of the maneuver, and the impulsive delta-v.
+    ImpulseManeuver class holds an impulse maneuver definition, which includes the time of the maneuver, and the impulsive delta-v.
 
     Properties
     ----------
@@ -46,7 +46,7 @@ class ImpulsiveManeuver:
 
 class ContinuousManeuver:
     """
-    ContinuousManeuver class holds an Continuous Maneuver definition, which includes the acceleration
+    ContinuousManeuver class holds a continuous maneuver definition, which includes the acceleration
     function defining the maneuver, and the time range over which the maneuver occurs.
     """
 
