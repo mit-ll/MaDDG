@@ -8,7 +8,7 @@
 Welcome to MaDDG's documentation!
 =================================
 
-MaDDG (**Ma**neuver **D**etection **D**ata **G**eneration) is a library for simulating 
+MaDDG (Maneuver Detection Data Generation) is a library for simulating 
 high-fidelity observations of satellite trajectories with configurable maneuvers 
 and custom sensor networks. MaDDG provides a simple interface for modeling complex 
 observation scenarios. It allows you to create a satellite in any geocentric orbit, 
@@ -42,7 +42,7 @@ its top-level directory:
    $ pip install -e .
 
 If you want to modify the orbit propagation physics behind MaDDG, you
-will likely need to edit the `AstroForge`_() library, as well. AstroForge is
+will likely need to edit the `AstroForge`_ library, as well. AstroForge is
 an open-source astrodynamics library and a key requirement of MaDDG. See
 the `AstroForge documentation`_ for installation instructions.
 
