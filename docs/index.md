@@ -6,7 +6,6 @@
 
 Through its use of [hydra-zen](https://github.com/mit-ll-responsible-ai/hydra-zen) and the [submitit plugin](https://hydra.cc/docs/plugins/submitit_launcher/), `MaDDG` can easily configure an array of simulation scenarios and distribute them in a SLURM cluster, empowering users to create large-scale, realistic datasets for training reliable maneuver detection and characterization models.
 
-
 ## Contents
 
 ```{toctree}

@@ -2,5 +2,14 @@
 # To build the module reference correctly, make sure every external package
 # under `install_requires` in `setup.cfg` is also listed here!
 # sphinx_rtd_theme
+astropy>=5.3.1
 myst-parser[linkify]
+numba>=0.57.1
+numpy==1.26.4
+scipy>=1.11.1
 sphinx>=3.2.1
+sphinx_rtd_theme
+pydata_sphinx_theme
+sphinx-design==0.5.0
+sphinx-tabs==3.4.4
+nbsphinx==0.9.7

@@ -16,29 +16,39 @@
 
 <p align="center">A library for simulating high-fidelity observations of satellite trajectories with configurable maneuvers and custom sensor networks.</p>
 
-`MaDDG` provides a simple interface for modeling complex observation scenarios. It allows you to create a satellite in any geocentric orbit, propagate its motion with a robust physical model, and track its position through optical sensors with customizable locations, observing limits, and noise parameters.
+MaDDG provides a simple interface for modeling complex observation scenarios. It allows you to create a satellite in any geocentric orbit, propagate its motion with a robust physical model, and track its position through optical sensors with customizable locations, observing limits, and noise parameters.
 
-Through its use of [hydra-zen](https://github.com/mit-ll-responsible-ai/hydra-zen) and the [submitit plugin](https://hydra.cc/docs/plugins/submitit_launcher/), `MaDDG` can easily configure an array of simulation scenarios and distribute them in a SLURM cluster, empowering users to create large-scale, realistic datasets for training reliable maneuver detection and characterization models.
+Through its use of [hydra-zen](https://github.com/mit-ll-responsible-ai/hydra-zen) and the [submitit plugin](https://hydra.cc/docs/plugins/submitit_launcher/), MaDDG can easily configure an array of simulation scenarios and distribute them in a SLURM cluster, empowering users to create large-scale, realistic datasets for training reliable maneuver detection and characterization models.
 
 ## Installation
 
-`MaDDG` requires the AstroForge library, which currently must be installed first. See the AstroForge documentation for instructions.
-
-Once AstroForge is installed, clone the `MaDDG` git repository, and from the repository's top-level directory, run the command
+MaDDG is available on PyPI:
 
 ```console
-pip install .
+pip install MaDDG
 ```
+
+To install from source, clone this repository and run the following
+command from its top-level directory:
+
+```console
+pip install -e .
+```
+
+If you want to modify the orbit propagation physics behind MaDDG, you
+will likely need to edit the [AstroForge](https://github.com/mit-ll/AstroForge) library, as well. AstroForge is
+an open-source astrodynamics library and a key requirement of MaDDG. See
+the [AstroForge documentation](https://astroforge.readthedocs.io/en/latest/) for installation instructions.
 
 ## Usage
 
-For details on how to use the various features of `MaDDG`, we recommend following the Jupyter notebooks in the `examples/` directory.
+For details on how to use the various features of MaDDG, we recommend following the Jupyter notebooks in the `examples/` directory.
 
 ## Citation
 
 Please use this DOI number reference, published on [Zenodo](https://zenodo.org), when citing the software:
 
-**ONCE REPO IS PUBLIC, ZENODO DOI WILL GO HERE**
+[![DOI](https://zenodo.org/badge/921266858.svg)](https://doi.org/10.5281/zenodo.15080638)
 
 ## Post Processing Scripts
 
@@ -101,9 +111,9 @@ DISTRIBUTION STATEMENT A. Approved for public release. Distribution is unlimited
 Research was sponsored by the United States Air Force Research Laboratory and the United
 States Air Force Artificial Intelligence Accelerator and was accomplished under Cooperative
 Agreement Number FA8750-19-2-1000. The views and conclusions contained in this document
-are those of the authors and should not be interpreted as representing the official 
-policies, eitherexpressed or implied, of the United States Air Force or the U.S. 
-Government. The U.S.Government is authorized to reproduce and distribute reprints 
+are those of the authors and should not be interpreted as representing the official
+policies, eitherexpressed or implied, of the United States Air Force or the U.S.
+Government. The U.S.Government is authorized to reproduce and distribute reprints
 for Government purposes notwithstanding any copyright notation herein.
 
 © 2024 Massachusetts Institute of Technology.
