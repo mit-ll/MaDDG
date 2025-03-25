@@ -294,9 +294,6 @@ scratch/
 outputs/
 examples/example_outputs/
 
-# Documentation Files
-.readthedocs.yml
-
 # pytest and pytest-cov
 .coverage
 .coveragerc
