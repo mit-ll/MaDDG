@@ -359,6 +359,54 @@ class TestLauncher:
         # Cleanup
         shutil.rmtree(outdir)
 
+    def test_auto_cleanup_default(self):
+        """Test that the rm_multirun_root option will clean up default multirun directory."""
+
+        outdir, _, output_csv, errors_txt = prepare_output_dirs(
+            "test_auto_cleanup_default"
+        )
+
+        multirun_dir = "multirun"
+
+        num_sim_pairs = 1
+        mtype = "impulse"
+        sim_duration_days = 0.5
+        start_mjd = 60196.5
+
+        launcher(
+            simulator_method=simulator_task,
+            mtype=mtype,
+            num_sim_pairs=num_sim_pairs,
+            sensor_yaml=sensor_yaml_11,
+            outdir=outdir,
+            start_mjd=start_mjd,
+            sim_duration_days=sim_duration_days,
+            rm_multirun_root=True,
+            random_seed=0,
+        )
+
+        # The number of multirun experiments should not have changed
+        new_experiment_count, _ = count_experiments(multirun_dir)
+        assert new_experiment_count == 0
+
+        assert output_csv.exists()
+        assert errors_txt.exists()
+
+        results = pd.read_csv(output_csv)
+
+        assert results["Sequence"].isin([0, 1]).all()
+        assert len(results) > 0
+        assert sum(results["Maneuver"] == 0) > 0
+        assert sum(results["Maneuver"] == 1) > 0
+
+        with open(errors_txt, "r") as f:
+            errors = f.read()
+
+        assert errors == ""
+
+        # Cleanup
+        shutil.rmtree(outdir)
+
     def test_prediction_error(self):
         """Test launching experiments with orbit-misestimation"""
 
