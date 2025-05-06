@@ -7,3 +7,23 @@ build-backend = "setuptools.build_meta"
 # For smarter version schemes and other configuration options,
 # check out https://github.com/pypa/setuptools_scm
 version_scheme = "no-guess-dev"
+
+[tool.coverage.run]
+branch = true
+omit = ["tests/*"]
+
+[tool.coverage.report]
+# Regexes for lines to exclude from consideration
+exclude_lines = [
+       'pragma: no cover',
+       'def __repr__',
+       'raise NotImplementedError',
+       'class .*\bProtocol(\[.+\])?\):',
+       '@(abc\.)?abstractmethod',
+       '@(typing\.)?overload',
+       'except ImportError:',
+       'except ModuleNotFoundError:',
+       'if (typing\.)?TYPE_CHECKING:',
+       'if sys\.version_info',
+       'if __name__ == .__main__.:',
+]
